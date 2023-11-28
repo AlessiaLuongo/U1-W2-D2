@@ -8,9 +8,11 @@ let a = 3;
 let b = 6;
 
 if (a > b) {
-  console.log("a>b");
+  console.log("a > b");
+} else if (a < b) {
+  console.log("a < b");
 } else {
-  console.log("b>a");
+  console.log("a=b");
 }
 
 /* ESERCIZIO 2
@@ -23,9 +25,9 @@ let luckyNumber = 6;
 if (luckyNumber !== 5) {
   console.log("not equal");
 }
-
 /* ESERCIZIO 3
-  Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
+  Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente 
+  divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -37,13 +39,14 @@ if (number1 % 5 === 0) {
 }
 
 /* ESERCIZIO 4
-  Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
+  Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 
+  oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let num1 = 2;
 let num2 = 6;
-if (num1 === 8 || num2 === 8 || num1 + num2 === 8) {
+if (num1 === 8 || num2 === 8 || num1 + num2 === 8 || num1 - num2 === 8) {
   console.log("Fantastico");
 } else {
   console.log("Non fantastico");
@@ -51,7 +54,8 @@ if (num1 === 8 || num2 === 8 || num1 + num2 === 8) {
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
-  C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
+  C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita 
+  (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
@@ -65,7 +69,8 @@ let totalShoppingCart = 40;
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
-  Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
+  Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, 
+  determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -102,7 +107,8 @@ if (x > y && x > z && y > z) {
 }
 
 /* ESERCIZIO 8
-  Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
+  Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: 
+    cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -115,7 +121,8 @@ if (typeof dontKnowNumber == "number") {
 }
 
 /* ESERCIZIO 9
-  Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
+  Crea un algoritmo per controllare se un numero fornito sia pari o dispari 
+  (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -165,15 +172,33 @@ console.log(me);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let ultimoElemento = me.skills.pop();
+console.log(ultimoElemento);
+console.log(me.skills);
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const myArray = [];
+myArray.push(1);
+myArray.push(2);
+myArray.push(3);
+myArray.push(4);
+myArray.push(5);
+myArray.push(6);
+myArray.push(7);
+myArray.push(8);
+myArray.push(9);
+myArray.push(10);
+
+console.log(myArray);
+console.log(myArray[6]);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+myArray[9] = 100;
