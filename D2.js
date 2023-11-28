@@ -104,6 +104,8 @@ if (x > y && x > z && y > z) {
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
+
+/* SCRIVI QUI LA TUA RISPOSTA */
 let dontKnowNumber = 50;
 let dontKnowWhatThisIs = "ahNonSo";
 if (typeof dontKnowNumber == "number") {
@@ -112,27 +114,29 @@ if (typeof dontKnowNumber == "number") {
   console.log("Questo non è un numero");
 }
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+if (num1 % 2 === 0) {
+  console.log("Questo numero è pari");
+} else {
+  console.log("è dispari");
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
-*/
-
+  */
 /* SCRIVI QUI LA TUA RISPOSTA */
+let val = 7;
+if (val < 10 && val >= 5) {
+  console.log("Meno di 10");
+} else if (val < 5) {
+  console.log("Meno di 5");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -145,12 +149,16 @@ const me = {
 };
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+me.city = "Toronto";
+console.log(me);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName;
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
